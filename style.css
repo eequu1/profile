@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
   background-color: #f5faf9;
@@ -7,16 +9,23 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+/* Main heading */
+
 h1 {
   color: #03897b;
   font-size: 30px;
 }
 
+/* Profile picture */
+
 .profile_img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  object-fit: cover;
 }
+
+/* Content sections */
 
 section {
   background-color: white;
@@ -25,20 +34,51 @@ section {
   max-width: 600px;
   border-radius: 10px;
   font-size: 20px;
+  border: 1px solid lightgrey;
 }
+
+/* Ontomo project link */
 
 .link {
-  color: #03897b;
-  text-decoration: none;
-  font-size: 15px;
+  background-color: #EEEEEE;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  font-size: 20px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
 }
 
-.link:hover {
+.link a {
+  color: #03897b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover a {
   color: darkslategrey;
 }
 
-footer {
-  color: grey;
-  font-size: 14px;
-  margin-top: 30px;
+/* Social media section */
+
+.socials ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.socials li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.socials i {
+  font-size: 60px;
+  color: #03897b;
+}
+
+.socials i:hover {
+  color: darkslategrey;
 }
